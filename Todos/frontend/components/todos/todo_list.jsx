@@ -1,3 +1,10 @@
+import React from 'react';
 
+const TodoList = (props) => {
+    return (
+        <ul>
+            {/* {props.todos.forEach(element => )} */}
+        </ul>
 
-export default () =>  <h3> this is a h3</h3>
+    )
+}
