@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import store from './frontend/store/store';
+import configureStore from './frontend/store/store';
 
-window.store = store;
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
+    const store = configureStore();
+    window.store = store;
     ReactDOM.render(<h1>test</h1>, root);
 });
